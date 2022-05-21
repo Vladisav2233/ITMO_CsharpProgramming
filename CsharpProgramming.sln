@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab1_SipleProgram", "Lab1\L
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab1_Exception handler", "Lab1_Exception handler\Lab1_Exception handler.csproj", "{C8E0E9A9-3954-443F-9DA3-32E586C7DE8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab2_BankAccount", "Lab2_BankAccount\Lab2_BankAccount.csproj", "{60DA214A-B4DA-458D-9F70-6613AF892CFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab2_BankAccount", "Lab2_BankAccount\Lab2_BankAccount.csproj", "{60DA214A-B4DA-458D-9F70-6613AF892CFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab2_StructType", "Lab2_StructType\Lab2_StructType.csproj", "{FF9D5362-79E7-4AAA-AD4F-B31FE7D8A34F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab2_StructType", "Lab2_StructType\Lab2_StructType.csproj", "{FF9D5362-79E7-4AAA-AD4F-B31FE7D8A34F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab3_WhatDay", "Lab3_WhatDay\Lab3_WhatDay.csproj", "{BCCD7B5A-AF98-4C8A-ADF7-58879E278ECE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{FF9D5362-79E7-4AAA-AD4F-B31FE7D8A34F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF9D5362-79E7-4AAA-AD4F-B31FE7D8A34F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF9D5362-79E7-4AAA-AD4F-B31FE7D8A34F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCCD7B5A-AF98-4C8A-ADF7-58879E278ECE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCCD7B5A-AF98-4C8A-ADF7-58879E278ECE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCCD7B5A-AF98-4C8A-ADF7-58879E278ECE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCCD7B5A-AF98-4C8A-ADF7-58879E278ECE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
