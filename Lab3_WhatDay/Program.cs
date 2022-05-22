@@ -19,35 +19,48 @@
     {
         static void Main(string[] args)
         {
-            System.Collections.ICollection DaysInMonths
-        = new int[12] { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
-            Console.Write("Please enter a day number between 1 and 365: ");
-            string line = Console.ReadLine();
-            int dayNum = int.Parse(line);
-
-            int monthNum = 0;
-
-            foreach (int daysInMonth in DaysInMonths)
+            try
             {
-                if (dayNum <= daysInMonth)
+                System.Collections.ICollection DaysInMonths
+            = new int[12] { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+                Console.Write("Please enter a day number between 1 and 365: ");
+                string line = Console.ReadLine();
+                int dayNum = int.Parse(line);
+
+                if (dayNum < 1 || dayNum > 365)
                 {
-                    break;
-                }
-                else
-                {
-                    dayNum -= daysInMonth;
-                    monthNum++;
+                    throw new ArgumentOutOfRangeException("Day out of range");
+
+
+                    int monthNum = 0;
+
+                    foreach (int daysInMonth in DaysInMonths)
+                    {
+                        if (dayNum <= daysInMonth)
+                        {
+                            break;
+                        }
+                        else
+                        {
+                            dayNum -= daysInMonth;
+                            monthNum++;
+                        }
+                    }
+
+                End:
+                    MonthName temp = (MonthName)monthNum;
+                    string monthName = temp.ToString();
+
+                    Console.WriteLine("{0} {1}", monthName, dayNum);
                 }
             }
+            catch (Exception caught)
+            {
+                Console.WriteLine(caught);
+            }
 
-        End:
-            MonthName temp = (MonthName)monthNum;
-            string monthName = temp.ToString();
-  
-            Console.WriteLine("{0} {1}", monthName, dayNum);
-        
 
-        }
+            }
     }
 }
             
