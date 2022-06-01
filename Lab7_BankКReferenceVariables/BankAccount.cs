@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab6_BankAccountCreatingAndUsingClasses
+namespace Lab7_BankReferenceVariables
 {
     using System;
     class BankAccount
@@ -53,6 +53,12 @@ namespace Lab6_BankAccountCreatingAndUsingClasses
             }
             return sufficientFunds;
         }
+        public void TransferFrom(BankAccount accFrom, decimal amount)
+        {
+            if (accFrom.Withdraw(amount))
+                this.Deposit(amount);
+        }
+
 
         private long accNo;
         private decimal accBal;

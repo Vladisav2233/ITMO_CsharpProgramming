@@ -5,15 +5,38 @@ namespace Lab6_BankAccountCreatingAndUsingClasses
 
     class CreateAccount
     {
+        public static void TestWithdraw(BankAccount acc)
+        {
+            Console.Write("Enter amount to withdraw: ");
+            decimal amount = decimal.Parse(Console.ReadLine());
+            if (!acc.Withdraw(amount))
+            {
+                Console.WriteLine("Insufficient funds.");
+            }
+        }
+        public static void TestDeposit(BankAccount acc)
+        {
+            Console.Write("Enter amount to deposit: ");
+            decimal amount = decimal.Parse(Console.ReadLine());
+            acc.Deposit(amount);
+        }
+
         static void Main()
         {
             BankAccount berts = NewBankAccount();
             Write(berts);
+            TestDeposit(berts);
+            Write(berts);
+            TestWithdraw(berts);
+            Write(berts);
 
             BankAccount freds = NewBankAccount();
             Write(freds);
+            TestDeposit(freds);
+            Write(freds);
+            TestWithdraw(freds);
+            Write(freds);
         }
-
         static BankAccount NewBankAccount()
         {
             BankAccount created = new BankAccount();
@@ -32,7 +55,6 @@ namespace Lab6_BankAccountCreatingAndUsingClasses
 
             return created;
         }
-
         static void Write(BankAccount toWrite)
         {
             Console.WriteLine("Account number is {0}", toWrite.Number());
