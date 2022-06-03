@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab8_BankReadOnlyData", "La
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab9_UsingInterfaces", "Lab9_UsingInterfaces\Lab9_UsingInterfaces.csproj", "{C0A4B84A-6B66-4E10-99CA-918AC7800056}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab10_BankInternal", "Lab10_BankInternal\Lab10_BankInternal.csproj", "{63483F03-098E-4619-AE38-B195E0771B9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab10_BankInternal", "Lab10_BankInternal\Lab10_BankInternal.csproj", "{63483F03-098E-4619-AE38-B195E0771B9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab10_BankAssembly", "Lab10_BankAssembly\Lab10_BankAssembly.csproj", "{EF182017-7204-47EE-80DB-D15CB95390E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{63483F03-098E-4619-AE38-B195E0771B9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63483F03-098E-4619-AE38-B195E0771B9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63483F03-098E-4619-AE38-B195E0771B9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF182017-7204-47EE-80DB-D15CB95390E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF182017-7204-47EE-80DB-D15CB95390E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF182017-7204-47EE-80DB-D15CB95390E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF182017-7204-47EE-80DB-D15CB95390E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
